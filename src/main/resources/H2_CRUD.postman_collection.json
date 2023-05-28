@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "42b7de24-4aee-4526-89dd-7ba6862bf7d7",
+		"name": "H2_CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2382581"
+	},
+	"item": [
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crud",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/crud/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crud",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user - 장길산",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lastname\": \"장\",\r\n    \"firstname\": \"길산\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/crud",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update 패치 - 보고2하나",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"lastname\": \"장\",\r\n    \"firstname\": \"하나\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/crud",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_firstname",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"lastname\": \"김\",\r\n    \"firstname\": \"민수\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/crud",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crud"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_firstname",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"lastname\": \"황\",\r\n    \"firstname\": \"장수\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/crud",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crud"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
